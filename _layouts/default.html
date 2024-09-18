@@ -43,11 +43,9 @@
       <section>
         <div>
           <h2>My image</h2>
-          @for (deviantart_link of site.deviantart_links) {
-            <a href="{{ deviantart_link }}">
-              <img src="{{ site.deviantart_img }}" width=600 height=400/>
-            </a>
-          }
+          <a href="{{ site.deviantart_link }}">
+            <img src="{{ site.deviantart_img }}" />
+          </a>
           <h2>My pinterest</h2>
           <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://pl.pinterest.com/anneemilyofavonlea/kuchnia-moich-marze%C5%84-z-russell-hobbs/"></a>
         </div>
