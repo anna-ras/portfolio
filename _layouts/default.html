@@ -12,11 +12,6 @@
     <![endif]-->
     {% include head-custom.html %}
     <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
-    <script>
-      for (const e of {{ site.deviantart_links }} ) {
-        console.log(e);
-      }
-    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -48,9 +43,11 @@
       <section>
         <div>
           <h2>My image</h2>
-          <a href="{{ site.deviantart_link }}">
-            <img src="{{ site.deviantart_img }}" />
-          </a>
+          @for (deviantart_link of site.deviantart_links) {
+            <a href="{{ deviantart_link }}">
+              <img src="{{ site.deviantart_img }}" width=600 height=400/>
+            </a>
+          }
           <h2>My pinterest</h2>
           <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://pl.pinterest.com/anneemilyofavonlea/kuchnia-moich-marze%C5%84-z-russell-hobbs/"></a>
         </div>
