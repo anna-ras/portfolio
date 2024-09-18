@@ -13,7 +13,7 @@
     {% include head-custom.html %}
     <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
     <script>
-      for (const e of {{ site.deviantart_links }} ) {
+      for (const e of { site.deviantart_links } ) {
         console.log(e);
       }
     </script>
