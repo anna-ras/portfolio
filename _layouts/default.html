@@ -12,6 +12,7 @@
     <![endif]-->
     {% include head-custom.html %}
     <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script type="text/javascript" async defer src="{{ base.url | prepend: site.url }}/assets/deviantart_gallery.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -42,10 +43,8 @@
       </header>
       <section>
         <div>
-          <h2>My image</h2>
-          <a href="{{ site.deviantart_link }}">
-            <img src="{{ site.deviantart_img }}" />
-          </a>
+          <h2>My images</h2>
+          <div id="deviantart-gallery" class="deviantart-gallery" gallery-id="annie812/45096113"></div>
           <h2>My pinterest</h2>
           <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://pl.pinterest.com/anneemilyofavonlea/kuchnia-moich-marze%C5%84-z-russell-hobbs/"></a>
         </div>
