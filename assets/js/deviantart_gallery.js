@@ -29,7 +29,7 @@ function createGallery(gallery_resp_doc, gallery_div) {
         gallery_div.innerHTML += `
             <div>
                 <a href=${link}>
-                    <img src=${thumbnails[0].getAttribute('url')} />
+                    <img src=${thumbnails[1].getAttribute('url')} />
                 </a>
             </div>
         `
