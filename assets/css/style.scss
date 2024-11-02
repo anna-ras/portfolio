@@ -6,8 +6,8 @@
 div.deviantart-gallery {
     margin: 10px;
     border: 1px solid #000000;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     overflow: auto;
     background-color: #151515;
 }
@@ -15,4 +15,5 @@ div.deviantart-gallery {
 div.deviantart-gallery img {
     float: left;
     margin: 1px;
+    width: 248px;
 }
